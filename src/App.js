@@ -17,6 +17,11 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <nav>
+            <Link to="/">Go to Home Page</Link>{' '}
+            <Link to="/procedures">See Our Procedures</Link>{' '}
+            <Link to="/contact">Contact Us!</Link>
+          </nav>
           <Route exact path="/" component={Home} />
           <Route path="/procedures" component={Procedures} />
           <Route path="/contact" component={Contact} />
